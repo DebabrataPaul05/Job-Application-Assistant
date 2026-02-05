@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Job Application Assistant</h1>
+      <p>Analyse and improve your job application with clarity and precision</p>
+    </header>
+
+    <main class="app-main">
+      <section class="input-section">
+        <div class="field-group">
+          <label>Job Description</label>
+          <textarea id="jobDescription" placeholder="Paste the job description here..."></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>Resume / Application Content</label>
+          <textarea id="resumeContent" placeholder="Paste your resume or application content here..."></textarea>
+        </div>
+
+        <button id="analyzeBtn">Analyse Application</button>
+      </section>
+
+      <section class="output-section hidden" id="resultSection">
+        <div class="result-card">
+          <h2>Match Summary</h2>
+          <div class="score-box">
+            <span id="matchScore">0%</span>
+            <small>Estimated Match</small>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <h2>Matched Skills</h2>
+          <ul id="matchedSkills"></ul>
+        </div>
+
+        <div class="result-card">
+          <h2>Missing Skills</h2>
+          <ul id="missingSkills"></ul>
+        </div>
+
+        <div class="result-card">
+          <h2>Improvement Suggestions</h2>
+          <ul id="suggestions"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Built for learning and practical application analysis</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
